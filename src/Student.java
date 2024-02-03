@@ -1,9 +1,5 @@
 public class Student extends Person {
-    private double gpa;
-
-    public Student() {
-        super();
-    }
+    private final double gpa;
 
     public Student(String name, String surname, double gpa) {
         super(name, surname);
@@ -12,14 +8,6 @@ public class Student extends Person {
 
     public String toString() {
         return String.format("Student: %s earns %.2f tenge", super.toString(), getPaymentAmount());
-    }
-
-    public double getGpa() {
-        return gpa;
-    }
-
-    public void setGpa(double gpa) {
-        this.gpa = gpa;
     }
 
     @Override
